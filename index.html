@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/styles.css" />
+    <title>DEV_2.0</title>
+  </head>
+
+  <body>
+    <div class="loading-screen">
+      <div class="loading-spinner"></div>
+    </div>
+    <header class="sticky-header">
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./views/about.html">About</a></li>
+          <li><a href="./views/services.html">Services</a></li>
+          <li><a href="./views/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="jumbotron">
+      <div class="jumbotron-content">
+        <h1>Welcome to Our Website</h1>
+        <p>Scroll down to see header and other content</p>
+        <img
+          src="https://picsum.photos/seed/picsum/300/300"
+          alt="Jumbotron Image"
+        />
+      </div>
+      <a href="#gallery" class="btn">Learn More</a>
+    </div>
+
+    <div class="content">
+      <div class="gallery" id="gallery">
+        <div class="gallery-item">
+          <img src="https://picsum.photos/id/237/320/380" alt="Image 1" />
+          <h3>Image Title 1</h3>
+          <p>Image description goes here.</p>
+        </div>
+        <div class="gallery-item">
+          <img src="https://picsum.photos/id/223/320/380" alt="Image 2" />
+          <h3>Image Title 2</h3>
+          <p>Image description goes here.</p>
+        </div>
+        <div class="gallery-item">
+          <img src="https://picsum.photos/id/239/320/380" alt="Image 3" />
+          <h3>Image Title 3</h3>
+          <p>Image description goes here.</p>
+        </div>
+        <div class="gallery-item">
+          <img src="https://picsum.photos/id/231/320/380" alt="Image 4" />
+          <h3>Image Title 4</h3>
+          <p>Image description goes here.</p>
+        </div>
+        <div class="gallery-item">
+          <img src="https://picsum.photos/id/227/320/380" alt="Image 5" />
+          <h3>Image Title 5</h3>
+          <p>Image description goes here.</p>
+        </div>
+        <div class="gallery-item">
+          <img src="https://picsum.photos/id/217/320/380" alt="Image 6" />
+          <h3>Image Title 6</h3>
+          <p>Image description goes here.</p>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal">
+      <span class="close" id="close">&times;</span>
+      <img class="modal-content" id="modal-image" />
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2023 DEV_2.0</p>
+    </footer>
+    <script src="./public/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "contact-form-backend",
+  "version": "1.0.0",
+  "description": "Backend server for handling contact form submissions",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Mohammad Ramzan",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0",
+    "nodemailer": "^6.6.3"
+  }
+}

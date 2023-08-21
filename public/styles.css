@@ -1,0 +1,478 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Sticky Header Styles */
+.sticky-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sticky-header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.sticky-header nav ul li {
+  margin: 0 15px;
+}
+
+.sticky-header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Jumbotron Styles */
+.jumbotron {
+  position: relative;
+  background-color: #f4f4f4;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.jumbotron-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.jumbotron h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.jumbotron p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+img {
+  border-radius: 10px;
+}
+/* Image Gallery Styles */
+.content {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.gallery-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px; /* Adjusted padding */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery img {
+  cursor: pointer;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Modal Styles */
+.modal {
+  display: none; /* Hide the modal by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  max-width: 100%;
+  max-height: 90%;
+  display: block;
+  margin: auto; /* Center the image within the modal content */
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* I have addded */
+  min-height: 94.1vh;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-header {
+  background-color: #f4f4f4;
+  padding: 20px;
+  width: 97%;
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container {
+  max-width: 400px;
+  width: 100%;
+  padding: 50px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  margin: 15px 0px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container textarea {
+  max-width: 100%; /* Ensure the textarea doesn't exceed its container's width */
+}
+
+/* Extreme Advanced About Us Page Styles */
+.about-section {
+  background: linear-gradient(to bottom, #f0f6fa, #d1e2f2);
+  padding: 100px 0;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-text {
+  flex: 1;
+  padding: 30px;
+  color: #333;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+.about-image:hover img {
+  transform: scale(1.05);
+}
+
+/* Advanced Services Page Styles */
+.services-section {
+  background: linear-gradient(to bottom, #f5f9fc, #e3eff9);
+  padding: 88px 0;
+  text-align: center;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.service-card {
+  flex: 1;
+  max-width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007bff;
+}
+
+.service-icon {
+  font-size: 2rem;
+  /* margin-bottom: 15px; */
+  color: #007bff;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .gallery-item {
+    max-width: calc(100% - 20px);
+  }
+
+  .contact-container {
+    padding: 20px;
+  }
+
+  .contact-form-container {
+    max-width: 100%;
+    padding: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .sticky-header nav ul li {
+    margin: 0 10px;
+  }
+
+  .jumbotron-content {
+    max-width: 80%;
+  }
+
+  .about-container {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .about-image img,
+  .about-text {
+    margin-bottom: 30px;
+  }
+
+  .services-container {
+    padding: 40px 20px;
+  }
+
+  .service-card {
+    max-width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 576px) {
+  .sticky-header nav ul li {
+    margin: 0 5px;
+  }
+
+  .jumbotron h1 {
+    font-size: 2rem;
+  }
+
+  .jumbotron p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .about-section,
+  .services-section {
+    padding: 60px 0;
+  }
+
+  .about-container {
+    padding: 20px;
+  }
+
+  .services-container {
+    padding: 20px;
+  }
+
+  .service-card {
+    max-width: calc(100% - 40px);
+  }
+}
+
+/* @media (min-height: 100vh) {
+  .contact-container,
+  .about-content,
+  .services-section {
+    min-height: calc(100vh - 70px);
+  }
+} */
+
+.footer {
+  /* position: absolute;
+  bottom: 0; */
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+/* Loading Animation Styles */
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.loading-spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

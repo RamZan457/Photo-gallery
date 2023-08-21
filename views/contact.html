@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/styles.css" />
+    <title>DEV_2.0</title>
+  </head>
+
+  <body>
+    <header class="sticky-header">
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="contact-container">
+      <div class="contact-header">
+        <h2>Contact Us</h2>
+      </div>
+      <div class="contact-form-container">
+        <form id="contact-form" onsubmit="return validateForm()">
+          <div class="input-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="input-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="input-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required />
+          </div>
+          <div class="input-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2023 DEV_2.0</p>
+    </footer>
+    <script src="../public/script.js"></script>
+  </body>
+</html>
